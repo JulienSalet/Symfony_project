@@ -48,13 +48,6 @@ class User implements AdvancedUserInterface, \Serializable
     private $plainPassword;
 
     /**
-     * @var array
-     *
-     * @ORM\Column(type="json_array")
-     */
-    private $roles;
-
-    /**
      * @var boolean
      *
      * @ORM\Column(type="boolean")

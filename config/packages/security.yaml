@@ -4,7 +4,7 @@ security:
         ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
     encoders:
         App\Entity\User:
-            algorithm: argon2i #brcypt
+            algorithm: brcypt #brcypt
     providers:
         app_provider:
             entity:

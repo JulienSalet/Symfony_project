@@ -20,6 +20,13 @@ class Product
     private $id;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $price;
+
+    /**
      * @var string
      *
      * @ORM\Column(type="string", length=75)
@@ -52,5 +59,21 @@ class Product
         $this->name = $name;
 
         return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param int $price
+     */
+    public function setPrice(int $price): void
+    {
+        $this->price = $price;
     }
 }
